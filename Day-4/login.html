@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Page</title>
+    <style>
+       header{
+
+padding: 0px;
+ margin-top: -10px;
+
+ background-color: white;
+ width: 100%;
+ height: 100px;
+ 
+
+}
+nav>div img {
+ width: 190px;
+ height: 80px;
+ border-radius: 30px;
+}
+
+nav {
+ padding: 10px;
+ margin-top: -10px;
+ width: 100%;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ margin-bottom: 30px;
+ position:fixed;
+ background-color: white;
+ border: 10px solid white;
+}
+
+#line>a {
+ margin: 20px;
+ text-decoration: none;
+ color: black;
+}
+
+#line>a:hover {
+ text-decoration: underline;
+ color: aqua;
+}
+
+#last {
+ display: flex;
+ align-items: center;
+}
+
+#last p,
+#last img,
+#last a {
+ margin: 10px;
+}
+
+.earth {
+ width: 40px;
+ height: 40px;
+}
+
+button {
+ padding: 15px;
+ border-radius: 30px;
+}
+
+.sign {
+ background-color: rgba(227, 213, 11, 0.893);
+ width: auto;
+ border-radius: 30px;
+ padding: 15px;
+}
+
+button:hover {
+ padding-bottom: 10px;
+}
+
+
+       #main{
+        width: 100%;
+        display: flex;
+        height: 100%;
+      }
+      #imgs{
+        width: 70%;
+        
+      }
+      #imgs>img{
+        width: 100%;
+        height: 100%;
+      }
+      #signin{
+        height: 100%;
+        width: 30%;
+        margin: auto;
+        font-size: 25px;
+        text-align: left;
+        padding: 60px 40px;
+        
+      }
+      form input,label{
+        margin: 14px;
+        padding-right: 44px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        width: 80%;
+      }
+      #butt{
+        background-color: blueviolet;
+        width: 190px;
+        width: 80%;
+      }
+      
+     
+    </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <div id="line">
+            <a href="">Products</a>
+            <a href="">Resources</a>
+            <a href="">Inspiration</a>
+            <a href="">Pricing</a>
+        </div>
+        <div>
+           <a href="./index.html"> <img src="http://127.0.0.1:5500/Learn.png" alt=""></a>
+        </div>
+        <div id="last">
+            <a href="">Sales <br>+9166416515</a>
+            <img class="earth"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvIuKM_fdfy1fFEnqxiqBXnrphIW2uT5C84w&usqp=CAU"
+                alt="">
+            <img class="earth"
+                src="https://image.shutterstock.com/image-vector/search-icon-symbol-premium-quality-260nw-664547113.jpg"
+                alt="">
+            <a  href="./login.html"><button>Log In</button></a>
+            <a href="signup.html"> <button class="sign">Sign Up</button></a>
+        </div>
+    </nav>
+</header>
+     
+     <div id="main">
+      <div id="signin">
+        <h1>Log In</h1>
+        <p>Need a Mailchimp?  <a href="./signup.html">Create an account</a></p>
+        <form>
+          <label for="">Enter your Email</label><br>
+          <input type="email" id="email" placeholder="Enter your email id"><br>
+          <label for="">Password</label><br>
+          <input type="password"  id="password" placeholder="Enter your password"><br>
+           <input id="butt" type="submit" value="Login" />
+         <!-- <a href="./index.html"></a> -->
+        </form>
+      </div>
+      <div id="imgs">
+        <img src="http://127.0.0.1:5500/login%20image.png" alt="">
+      </div>
+     </div>
+</body>
+<script>
+
+  let data=JSON.parse(localStorage.getItem("account-data"))
+  // console.log(data)
+  let form=document.querySelector("form")
+  form.addEventListener("submit",function(){
+    var usermail=document.querySelector("#email").value
+    var userpass=document.querySelector("#password").value;
+ let flag=false;
+    for(let i=0;i<data.length;i++){
+      if(usermail===data[i].entermail && userpass===data[i].enterpass){
+        flag=true
+      }
+    }
+    if(flag==true){
+        //  alert("Log in Successful")
+          window.location.assign("index.html")
+    }else{
+        alert("Wrong Credentials")
+        
+    }
+  })
+ 
+ 
+   
+</script>
+</html>
