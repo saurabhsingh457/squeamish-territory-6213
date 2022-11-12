@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to Earn by Mail</title>
+    <style>
+        header{
+
+           padding: 0px;
+            margin-top: -10px;
+           
+            background-color: white;
+            width: 100%;
+            height: 100px;
+            
+
+        }
+        nav>div img {
+            width: 190px;
+            height: 80px;
+            border-radius: 30px;
+        }
+
+        nav {
+            padding: 10px;
+            margin-top: -10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 30px;
+            position:fixed;
+            background-color: white;
+            border: 10px solid white;
+        }
+        #line{
+           display: flex;
+           justify-content: space-evenly;
+            
+        }
+        #line > div {
+            margin-right: 60px;
+        }
+       
+
+        #last {
+            display: flex;
+            align-items: center;
+        }
+
+        #last p,
+        #last img,
+        #last a {
+            margin: 10px;
+        }
+
+        .earth {
+            width: 40px;
+            height: 40px;
+        }
+
+        button {
+            padding: 15px;
+            border-radius: 30px;
+        }
+
+        .sign {
+            background-color: rgba(227, 213, 11, 0.893);
+            width: auto;
+            border-radius: 30px;
+            padding: 15px;
+        }
+
+        button:hover {
+            padding-bottom: 10px;
+        }
+
+        #teir {
+            text-align: center;
+            font-family: cursive;
+            width: 50%;
+            margin: auto;
+            font-size: 26px;
+            margin-bottom: 60px;
+            margin-top: 60px;
+        }
+
+        #third {
+            display: flex;
+        }
+
+        #third>div {
+            width: 25%;
+            height: 100%;
+        }
+
+        #third>div>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #third2 {
+            display: flex;
+            margin-top: -10px;
+        }
+
+        #third2>div:nth-child(1) {
+            text-align: center;
+            padding: 10px 20px;
+            width: 25%;
+            height: 100%;
+            background-color: goldenrod;
+
+        }
+
+        #third2>div:nth-child(2) {
+            text-align: center;
+            padding: 10px 20px;
+            width: 25%;
+            height: 100%;
+            background-color: lightgoldenrodyellow;
+        }
+
+        #third2>div:nth-child(3) {
+            text-align: center;
+            padding: 10px 20px;
+            width: 25%;
+            height: 100%;
+            background-color: wheat;
+        }
+
+        #third2>div:nth-child(4) {
+            text-align: center;
+            padding: 10px 20px;
+            width: 25%;
+            height: 100%;
+            background-color: white;
+        }
+
+        .third-c {
+            position: relative;
+        }
+
+        /* Bottom right text */
+        .third-c>.text-block {
+            position: absolute;
+            top: 25px;
+            font-size: 18px;
+            /* right:auto; */
+            left: 60px;
+            background-color: none;
+            color: black;
+
+        }
+
+        .third-c>.text-block>a {
+            margin: auto;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .third-c>.text-block>a:hover {
+            text-decoration: underline;
+            color: cornflowerblue;
+        }
+        #video{
+            background-color: black;
+            padding: 60px 100px;
+        }
+        #video > div{
+            padding-bottom: 40px;
+            text-align: center;
+            font-size: 30px;
+            color: wheat;
+        }
+       #plan ul{
+        text-decoration: underline;
+       }
+       #plan{
+        margin: auto;
+        display: flex;
+        width: 90%;
+       }
+       #plan div{
+        width: 25%;
+        border: 1px solid black;
+        padding: 20px;
+        text-align: left;
+       }
+       #plan div > h1+p{
+        margin-top: -25px;
+       }
+       #plan div:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
+       #plan-main{
+        padding: 30px;
+        background-color: whitesmoke;
+        text-align: center;
+       }
+       #fourth{
+        text-align: center; 
+       }
+       
+       #fourth1{
+        width: 100%;
+        display: flex;
+       }
+       #fourth1 > div{
+        width: 50%;
+       }
+       #fourth1>div>img{
+        width: 100%;
+       }
+       #fourth1>div:first-child{
+        background-color: goldenrod;
+        text-align: left;
+        padding: 140px 40px 0px 40px;
+       }
+       #fifth{
+        width: 80%;
+        margin: auto;
+       }
+       #fifth1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+        text-align: center;
+       }
+       #fifth1>div{
+        display: flex;
+        align-items: center;
+       }
+       #fifth11>a>img{
+        
+        width: 100px;
+        height: 100px;
+       }
+       #fifth11>div{
+        /* width: 60%; */
+        text-align: left;
+        padding-left: 20px; 
+       }
+       #sixth{
+        padding: 0px 60px;
+        padding-top: 30px;
+        background-color: whitesmoke;
+       }
+       #seventh{
+        display: flex;
+        justify-content: space-around;
+        background-color: goldenrod;
+        padding: 40px 170px;
+        color: black;
+       }
+       #final{
+        background-color: goldenrod;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 50px;
+        border-top: 1px solid black;
+       }
+       #final>div:first-child>img{
+        margin-bottom: 20px;
+        /* width: 30%; */
+       }
+       #final>div:nth-child(2){
+        width: 30%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+       }
+       #final>div:nth-child(2)>img{
+        width: 30px;
+        height: 30px;
+       }
+       #final>div:last-child{
+        width: 30%;
+       }
+       #slidebar{
+        position: absolute;
+        width: auto;
+        height: 100%;
+        background-color: white;
+        left: -300px;
+        transition: .4s;
+       }
+       #slidebar.active{
+        left: 0;
+       }
+       #slidebar ul li{
+        list-style: none;
+        color: gray;
+        font-size: 20px;
+        padding: 20px 24px;
+        margin: 10px -13px;
+        
+       }
+       #slidebar ul li {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
+
+        .toggle-btn {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 20px;
+       }
+       /* ---------------- */
+       #slidebar2{
+        position: absolute;
+        width:auto;
+        height: 100%;
+        background-color: white;
+        left: -300px;
+        transition: .4s;
+       }
+       #slidebar2.active{
+        left: 0;
+       }
+       #slidebar2 ul li{
+        list-style: none;
+        color: gray;
+        font-size: 20px;
+        padding: 20px 24px;
+        margin: 10px -50px;
+       }
+       #slidebar2 ul li {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
+
+        .toggle-btn2 {
+        position: absolute;
+        top: 30px;
+        left: 130px;
+        font-size: 20px;
+       }
+       /* --------------------------------- */
+       #slidebar3{
+        position: absolute;
+        width: auto;
+        height: 100%;
+        background-color: white;
+        left: -300px;
+        transition: .4s;
+       }
+       #slidebar3.active{
+        left: 0;
+       }
+       #slidebar3 ul li{
+        list-style: none;
+        color: gray;
+        font-size: 20px;
+        padding: 20px 24px;
+        margin: 10px -50px;
+       }
+       #slidebar3 ul li {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
+
+       .toggle-btn3 {
+        position: absolute;
+        top: 30px;
+        left: 230px;
+        font-size: 20px;
+       }
+       /* ------------------------ */
+       #slidebar4{
+        position: absolute;
+        width: auto;
+        height: 100%;
+        background-color: white;
+        left: -300px;
+        transition: .4s;
+       }
+       #slidebar4.active{
+        left: 0;
+       }
+       #slidebar4 ul li {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
+       #slidebar4 ul li{
+        list-style: none;
+        color: gray;
+        font-size: 20px;
+        padding: 20px 24px;
+        margin: 10px -50px;
+       }
+
+       .toggle-btn4 {
+        position: absolute;
+        top: 30px;
+        left: 330px;
+        font-size: 20px;
+       }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="line">
+                <div>
+                    <div class="toggle-btn" onclick="show()">Product</div>
+                     <div id="slidebar">
+                    
+                    <ul>
+                        <li>Get-your-business-online</li>
+                        <li>Marketing-platform</li>
+                        <li>Audience</li>
+                        <li>Create-content </li>
+                        <li>Automations</li>
+                        <li>Insights</li>
+                       
+                    </ul>
+                  </div></div>
+                <div>
+                    <div class="toggle-btn2" onclick="show2()">Resources</div>
+                    <div id="slidebar2">
+                   
+                    <ul>
+                        <li>Resources mailchimp-101</li>
+                        <li>Help center</li>
+                        <li>Marketing Library</li>
+                        <li>For Freelancers & agencies </li>
+                        <li>whats's right for me</li>
+                        <li>For Developres</li>
+                    </ul>
+                  </div></div>
+                <div>
+                    <div class="toggle-btn3" onclick="show3()">Inspiration</div>
+                    <div id="slidebar3">
+                  
+                    <ul>
+                        <li>Podcastes</li>
+                        <li>Series</li>
+                        <li>Films</li>
+                        <li>Expert Insights </li>
+                        <li>Industry Trends</li>
+                        <li>Smart Living</li>
+                    </ul>
+                  </div></div>
+                <div>
+                    <div class="toggle-btn4" onclick="show4()">Pricing</div>
+                     <div id="slidebar4">
+                    
+                    <ul>
+                        <li>Premium ₹23,000/m*</li>
+                        <li>Standard ₹1150/m*</li>
+                        <li>Essential ₹770/m</li>
+                        <li>Free ₹0/m</li>
+                    </ul>
+                  </div></div>
+            
+            </div>
+            
+              
+            <div>
+               <a href="./index.html"> <img  src="http://127.0.0.1:5500/Learn.png" alt=""></a>
+            </div>
+            <div id="last">
+                <a href="">Sales <br>+91(800)165-4515</a>
+                <img class="earth"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvIuKM_fdfy1fFEnqxiqBXnrphIW2uT5C84w&usqp=CAU"
+                    alt="">
+                <img class="earth"
+                    src="https://image.shutterstock.com/image-vector/search-icon-symbol-premium-quality-260nw-664547113.jpg"
+                    alt="">
+                <a href="./login.html"><button>Log In</button></a>
+                <a href="signup.html"> <button class="sign">Sign Up</button></a>
+            </div>
+        </nav>
+    </header>
+    <div id="teir">
+        <div class="H-one">
+            <h1 class="h1">Turn Emails into Revenue</h1>
+            <p>Win new customers with the #1 email marketing and automations brand*
+                that recommends ways to get more opens, clicks, and sales.</p>
+
+            <div class="flex flex--middle flex--center margin--top-5 p23TextHero--ctaContainer">
+                <div>
+                    <a href="signup.html  "><button class="sign">Sign Up</button> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-3">
+        <div id="third">
+            <div  class="third-c">
+                <!-- <h1>bjdvskbkfjs</h1> -->
+                <img src="https://eep.io/images/yzco4xsimv0y/33f3mgIWbzKjIpIRJi2f5v/6bd36bba38b7f6a94d587605ab9a7d75/Desktop_Feature_Cards_1_Automations.jpeg?w=1260&fm=webp&q=80"
+                    alt="">
+                <div class="text-block">
+                    <a href="img1.html">Convert with Automation</a>
+
+                </div>
+            </div>
+
+            <div class="third-c">
+                <img src="https://eep.io/images/yzco4xsimv0y/hBcOt3RZ5DOhMJD2Hi2Z2/96b28d17c45e9376731ad825b002b0ff/Desktop_Feature_Cards_2_Analytics.png?w=1260&fm=webp&q=80"
+                    alt="">
+                <div class="text-block">
+                    <a href="img2.html">Optimize with AI & Analytics</a>
+
+                </div>
+            </div>
+            <div class="third-c">
+                <img src="https://eep.io/images/yzco4xsimv0y/5xqzo6y8Z7anw9VQXJarpj/5f91182af7bf16ecc34b487a619d0a54/Desktop_Feature_Cards_3_Segmentation.jpeg?w=630&fm=webp&q=80"
+                    alt="">
+                <div class="text-block">
+                    <a href="img3.html">Target with Segmentation</a>
+
+                </div>
+            </div>
+            <div class="third-c">
+                <img src="https://eep.io/images/yzco4xsimv0y/lsHRpmOI81ZcFS1Yld0Bs/1e2812587cd0f3089061bd4b513fd6d0/Desktop_Feature_Cards_4_Integrations.png?w=630&fm=webp&q=80"
+                    alt="">
+                <div class="text-block">
+                    <a href="img4.html">Sync with Integration</a>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="third2">
+            <div>
+                <h2>Send the right message at the right time to convert more customers</h2>
+                <a href=""><button class="sign">Learn More</button></a>
+            </div>
+            <div>
+                <h2>Get AI-assisted suggestions to help make your content more engaging.</h2>
+                <a href=""><button class="sign">Learn More</button></a>
+            </div>
+            <div>
+                <h2>Boost customer loyalty by predicting the right ones to target.</h2>
+                <a href=""><button class="sign">Learn More</button></a>
+            </div>
+            <div>
+                <h2>Connect more tools, get more data, save time, and make better decisions.</h2>
+                <a href=""><button class="sign">Learn More</button></a>
+            </div>
+        </div>
+    </div>
+
+   <div id="video">
+    <div>
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/oviQWAH4hi0"
+        title="Hello Sunshine x Mailchimp Present: The Road Map" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div>Most email marketing platforms tell you how your campaigns perform. We analyze the data from the billions of emails we send to give you personalized recommendations for improving your content, targeting, and automations.</div>
+   </div>
+ <div id="plan-main">
+    <h1>Find the right plan</h1>
+    <div id="plan">
+        <div>
+         <h1>Premium</h1>
+         <p>Our most advanced tools,unlimited contacts,and priority support;built for teams</p>
+         <p>starts at</p>
+         <h1>₹ 23,000</h1>
+         <p>/months based on 10,000 contacts*</p>
+         <ul> Phone & Priority Support</ul>
+         <ul>Max Contacts: Unlimites</ul>
+         <ul>Custom-Coded and Pre-built Email Templates</ul>
+         <ul>Multivariate and A/B Testing</ul>
+         <ul>Enhanced Automated Customer Journeys</ul>
+         <ul>Predictive Segmentation</ul>
+         <ul>Dedicated Onboarding Specialist</ul>
+        </div>
+        <div>
+         <h1>Standard</h1>
+         <p>Our most advanced tools,unlimited contacts,and priority support;built for teams</p>
+         <p>starts at</p>
+         <h1>₹ 1,500</h1>
+         <p>/months based on 500 contacts*</p>
+         <ul> 24/7 Email & Chat Support</ul>
+         <ul>Max Contacts: Unlimites</ul>
+         <ul>Custom-Coded and Pre-built Email Templates</ul>
+         <ul>Multivariate and A/B Testing</ul>
+         <ul>Enhanced Automated Customer Journeys</ul>
+         <ul>Predictive Segmentation</ul>
+         <ul>Dedicated Onboarding Specialist</ul>
+        </div>
+        <div>
+         <h1>Essentails</h1>
+         <p>Send the right content at the right time with testing and scheduling features.</p>
+         <p>starts at</p>
+         <h1>₹ 770</h1>
+         <p>/months based on 500 contacts*</p>
+         <ul> Phone & Priority Support</ul>
+         <ul>Max Contacts: Unlimites</ul>
+         <ul>Custom-Coded and Pre-built Email Templates</ul>
+         <ul>Multivariate and A/B Testing</ul>
+         <ul>Enhanced Automated Customer Journeys</ul>
+         <ul>Predictive Segmentation</ul>
+         <ul>Dedicated Onboarding Specialist</ul>
+        </div>
+        <div>
+         <h1>Free</h1>
+         <p>Our most advanced tools,unlimited contacts,and priority support;built for teams</p>
+         <p>starts at</p>
+         <h1>₹ 0</h1>
+         <p>/months based on 500 contacts*</p>
+         <ul> Phone & Priority Support</ul>
+         <ul>Max Contacts: Unlimites</ul>
+         <ul>Custom-Coded and Pre-built Email Templates</ul>
+         <ul>Multivariate and A/B Testing</ul>
+         <ul>Enhanced Automated Customer Journeys</ul>
+         <ul>Predictive Segmentation</ul>
+         <ul>Dedicated Onboarding Specialist</ul>
+        </div>
+        </div>
+        <p>*Overages apply if contact or email send limit is exceeded. Free plan sending will be paused if contact or email send limit is exceeded. Learn more</p>
+        <a href=""><button class="sign">See all plan details</button></a>
+ </div>
+ <div id="fourth">
+    <h1>Generate up to 4x more orders* with Customer Journey Builder automations</h1>
+    <div id="fourth1">
+        <div>
+            <h1>Keep customers ready to buy with engaging content</h1>
+            <p>content Optimizer</p>
+            <h3>Learn how your emails compare to the top-performing campaigns in your industry and get data-driven suggestions for improving your copy, imagery, and layout.</h3>
+        </div>
+        <div>
+            <img src="https://eep.io/images/yzco4xsimv0y/hBcOt3RZ5DOhMJD2Hi2Z2/96b28d17c45e9376731ad825b002b0ff/Desktop_Feature_Cards_2_Analytics.png?w=1260&fm=webp&q=80" alt="">
+        </div>
+    </div>
+ </div>
+ <div id="fifth">
+    <h1>Bring in more data, drive more growth with our integrations</h1>
+    <div id="fifth1">
+        <div  id="fifth11">
+           <a href="canva.html"> <img src="https://eep.io/images/yzco4xsimv0y/egMxvwdsj41K5eESLhWBO/cf823adbd311e33919f97ffc5bf3181d/Canva.jpg?w=196&fm=webp&q=80" alt=""></a>
+            <div>
+                <h2>Canva</h2>
+            <p>Create complelling visuals for your marketing</p>
+            </div>
+        </div>
+        <div id="fifth11">
+           <a href="partner.html"> <img src="https://eep.io/images/yzco4xsimv0y/51oq4AakIqo8fATlHgqHK0/02a750b1c1a16745296dca6fa7cb830c/Salesforce__1_.jpg?w=196&fm=webp&q=80" alt=""></a>
+            <div>
+                <h2>Mailchimp for Salesforce</h2>
+            <p>Create complelling visuals for your marketing</p>
+            </div>
+        </div>
+        <div id="fifth11">
+           <a href="instagram.html"> <img src="https://eep.io/images/yzco4xsimv0y/67trWJLKtKcvrqlKYSlskE/696ad499e0cc60aa7392521a6a7cfd90/Instagram__1_.jpg?w=196&fm=webp&q=80" alt=""></a>
+            <div>
+                <h2>Instagram</h2>
+            <p>Create complelling visuals for your marketing</p>
+            </div>
+        </div>
+        <div id="fifth11">
+          <a href="shopify.html">  <img src="https://eep.io/images/yzco4xsimv0y/44dW9Z4hibyDYi0qggfets/b01884985e996ffb5dc133556b92bb7a/Shopify__1_.jpg?w=196&fm=webp&q=80" alt=""></a>
+            <div>
+                <h2>Shopify</h2>
+            <p>Create complelling visuals for your marketing</p>
+            </div>
+        </div>
+        <div id="fifth11">
+          <a href="google.html">  <img src="https://eep.io/images/yzco4xsimv0y/7mpZ7UZrdzk2BmWX1OnRvb/5e610ecd21eeb25d0b82b098ce424e34/Google_Analytics2.jpg?w=196&fm=webp&q=80" alt=""></a>
+            <div>
+                <h2>Google Analytics</h2>
+            <p>Create complelling visuals for your marketing</p>
+            </div>
+        </div>
+        <div id="fifth11">
+           <a href="woo.html"> <img src="https://eep.io/images/yzco4xsimv0y/2uruOq31Y1FKdghFWn5zMg/8a35f3f9e463ba34038f3c3f16ccb635/WooCommerce.jpg?w=196&fm=webp&q=80" alt=""></a>
+            <div>
+                <h2>WooCommerce</h2>
+            <p>Create complelling visuals for your marketing</p>
+            </div>
+        </div>
+        <div id="fifth11">
+          <a href="quick.html"> <img src="https://eep.io/images/yzco4xsimv0y/uZVnrVt3DO1G4Ec5G4pvs/e6c9d3c2613827f7dd238f1c5e0b02d9/Quickbooks.jpg?w=196&fm=webp&q=80" alt=""></a>
+            <div>
+                <h2>QuickBooks Online</h2>
+            <p>Create complelling visuals for your marketing</p>
+            </div>
+        </div>
+        <div id="fifth11">
+           <a href="square.html"> <img src="https://eep.io/images/yzco4xsimv0y/2klSrOoLZKmLuGKZjKT9o3/ca400f60c2f3673f3ab9b52f4d03360d/Squarespace.jpg?w=196&fm=webp&q=80" alt=""></a>
+            <div>
+                <h2>Squarespace Commerce</h2>
+            <p>Create complelling visuals for your marketing</p>
+            </div>
+        </div>
+        <div id="fifth11">
+            <a href="zap.html"><img src="https://eep.io/images/yzco4xsimv0y/26deBkGp3A5Pj7suZ9oV7V/858e8a4603707166988a3282bca7e29b/Zapier.jpg?w=196&fm=webp&q=80" alt=""></a>
+            <div>
+                <h2>Zapier</h2>
+            <p>Create complelling visuals for your marketing</p>
+            </div>
+        </div>
+        
+    </div>
+    <h2>View all 300+ integrations</h2>
+ </div>
+ <div id="sixth">
+    <h4>*Disclaimers</h4>
+   <ol>
+    <li>Mailchimp is the #1 email marketing and automation brand based on competitor brands' publicly available data on worldwide numbers of customers in 2021 / 2022.</li>
+    <li>Generate up to 4X more orders with Customer Journey Builder automations based on orders generated through user's connected stores with automations versus when they used bulk emails.</li>
+    <li>Get up to 88% more revenue based on emails sent with predicted segments against non-predictive segmented emails for users with connected stores only. Standard or Premium Plan only.
+           Availability of features and functionality varies by plan type. For details, view plans and pricing.</li>
+    </ol>
+  
+ </div>
+ <div id="seventh">
+    <div class="seventh1">
+        <h3>Products</h3>
+        <a href="p1.html"><p>why Mailchimp?</p></a>
+        <a href="p2.html"><p>Products</p></a>
+        <a href="p3.html"><p>Updates</p></a>
+        <a href=""><p>Emails</p></a>
+        <a href=""><p>Marketing</p></a>
+        <a href=""><p>Website</p></a>
+        <a href=""><p>Transactional</p></a>
+        <a href=""><p>Compare</p></a>
+        <a href=""><p>Security</p></a>
+    </div>
+    <div class="seventh1">
+        <h3>Resources</h3>
+        <a href="p1.html"><p>Marketing Library</p></a>
+        <a href="p2.html"><p>Free Marketing</p></a>
+        <a href="p3.html"><p>Tools</p></a>
+        
+    </div>
+    <div class="seventh1">
+        <h3>Community</h3>
+        <a href="p1.html"><p>Agencies &</p></a>
+        <a href="p2.html"><p>Frrelancres</p></a>
+        <a href="p3.html"><p>Products</p></a>
+        <a href=""><p>Developers</p></a>
+        <a href=""><p>Events</p></a>
+        
+    </div>
+    <div class="seventh1">
+        <h3>Company</h3>
+        <a href="p1.html"><p>Our Story</p></a>
+        <a href="p2.html"><p>Newsroom</p></a>
+        <a href="p3.html"><p>Annual</p></a>
+        <a href=""><p>Report</p></a>
+        <a href=""><p>Careers</p></a>
+        <a href=""><p>Accessibility</p></a>
+       
+    </div>
+    <div class="seventh1">
+        <h3>Helps</h3>
+        <a href="p1.html"><p>Contacts</p></a>
+        <a href="p2.html"><p>Hire an</p></a>
+        <a href="p3.html"><p>Expert</p></a>
+        <a href=""><p>Help</p></a>
+        <a href=""><p>Center</p></a>
+        <a href=""><p>Talk to</p></a>
+        <a href=""><p>Sales</p></a>
+    </div>
+    <div class="seventh1">
+        <img src="https://eep.io/images/yzco4xsimv0y/5itQmdXHB6vMuAcvyWp5MR/ef5cd2cecd4c92b7029a22ec67585c65/Courier.svg?w=260&fm=webp&q=80" alt="">
+       <p>Expert insights,industry trends,and</p>
+       <p>inspiring stories that help you</p>
+       <p>live and work on your own term</p>
+       
+    </div>
+    
+ </div>
+ <div id="final">
+    <div>
+        <img src="https://eep.io/images/yzco4xsimv0y/1u3hha7FE0Q402e2qsMu6a/5e403548149c1618b64034284f692ff1/icon-ios.svg?w=320&fm=webp&q=80" alt=""><br>
+        <img src="https://eep.io/images/yzco4xsimv0y/64EpnI4RsQI66c2y2O60G2/4c34d7bc4dd7a4362c7e19a06c109e21/icon-android.svg?w=320&fm=webp&q=80" alt="">
+    </div>
+    <div>
+        <img src="https://eep.io/images/yzco4xsimv0y/5daYAeMRSgIUUiSquGwsgI/1904e3f818575ec9625fa15dab193243/icon-facebook.svg?w=320&fm=webp&q=80" alt="">
+        <img src="https://eep.io/images/yzco4xsimv0y/3VjJhbqftKuok6gqYuUQKy/328d56c5d13ad50b9679b11e716bb218/icon-twitter.svg?w=320&fm=webp&q=80" alt="">
+        <img src="https://eep.io/images/yzco4xsimv0y/RlNw7Xkw8uKYAUoYU4aQw/ff3eada8736da9e63fbd9f929c6a677c/icon-instagram.svg?w=320&fm=webp&q=80" alt="">
+        <img src="https://eep.io/images/yzco4xsimv0y/n5saFR4miW4U4ygUIQo0A/8f9c60cb133b80fda2fe9bdb825b4a5f/icon-linkedin.svg?w=320&fm=webp&q=80" alt="">
+        <img src="https://eep.io/images/yzco4xsimv0y/2z1ra9BrgQewIqMQckMasg/58e3e8ec04acd60f0642f89dfbd71218/icon-youtube.svg?w=320&fm=webp&q=80" alt="">
+        <img src="https://eep.io/images/yzco4xsimv0y/7nawBEArBKpxRukK66OZtN/af9879112b20982e13748d47b24c8681/pinterest-logo.svg?w=320&fm=webp&q=80" alt="">
+    </div>
+    <div>
+        <p>©2001-2022 All Rights Reserved. Mailchimp® is a registered trademark of The Rocket Science Group. Apple and the Apple logo are trademarks of Apple Inc. Mac App Store is a service mark of Apple Inc. Google Play and the Google Play logo are trademarks of Google Inc. Privacy | Terms | Cookie Preferences</p>
+    </div>
+ </div>
+</body>
+
+</html>
+<script>
+    function show(){
+        document.getElementById("slidebar").classList.toggle("active")
+    }
+    function show2(){
+        document.getElementById("slidebar2").classList.toggle("active")
+    }
+    function show3(){
+        document.getElementById("slidebar3").classList.toggle("active")
+    }
+    function show4(){
+        document.getElementById("slidebar4").classList.toggle("active")
+    }
+
+
+
+
+</script>
