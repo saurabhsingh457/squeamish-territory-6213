@@ -296,13 +296,15 @@
         color: gray;
         font-size: 20px;
         padding: 20px 24px;
-        margin: 10px -13px;
-        
+        margin: 10px -13px; 
        }
        #slidebar ul li {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
        }
-
+       #slidebar ul li a,#slidebar2 ul li a,#slidebar3 ul li a ,#slidebar4 ul li a{
+        text-decoration: none;
+        color: gray;
+       }
         .toggle-btn {
         position: absolute;
         top: 30px;
@@ -396,6 +398,15 @@
         left: 330px;
         font-size: 20px;
        }
+       /* @media screen and (min-width:100px) and (max-width:2000px) {
+        nav > div:first-child{
+            margin-top: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+        }
+       } */
        
     </style>
 </head>
@@ -409,23 +420,24 @@
                      <div id="slidebar">
                     
                     <ul>
-                        <li>Get-your-business-online</li>
-                        <li>Marketing-platform</li>
-                        <li>Audience</li>
+                        <li> <a href="p1.html">Get-your-business-online</a> </li>
+                        <li><a href="p2.html">Marketing-platform</a></li>
+                        <li><a href="p3.html">Audience</a></li>
                         <li>Create-content </li>
                         <li>Automations</li>
                         <li>Insights</li>
                        
                     </ul>
-                  </div></div>
+                  </div>
+                </div>
                 <div>
                     <div class="toggle-btn2" onclick="show2()">Resources</div>
                     <div id="slidebar2">
                    
                     <ul>
-                        <li>Resources mailchimp-101</li>
-                        <li>Help center</li>
-                        <li>Marketing Library</li>
+                        <li><a href="p1.html">Resources mailchimp-101</a></li>
+                        <li><a href="p2.html">Help center</a></li>
+                        <li><a href="p3.html">Marketing Library</a></li>
                         <li>For Freelancers & agencies </li>
                         <li>whats's right for me</li>
                         <li>For Developres</li>
@@ -436,9 +448,9 @@
                     <div id="slidebar3">
                   
                     <ul>
-                        <li>Podcastes</li>
-                        <li>Series</li>
-                        <li>Films</li>
+                        <li><a href="p1.html">Podcastes</a></li>
+                        <li><a href="p2.html">Series</a></li>
+                        <li><a href="p3.html">Films</a></li>
                         <li>Expert Insights </li>
                         <li>Industry Trends</li>
                         <li>Smart Living</li>
@@ -449,7 +461,7 @@
                      <div id="slidebar4">
                     
                     <ul>
-                        <li>Premium ₹23,000/m*</li>
+                        <li><a href="p1.html">Premium ₹23,000/m*</a></li>
                         <li>Standard ₹1150/m*</li>
                         <li>Essential ₹770/m</li>
                         <li>Free ₹0/m</li>
